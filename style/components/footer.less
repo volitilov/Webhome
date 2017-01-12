@@ -1,0 +1,242 @@
+footer {
+	padding: 0px;
+	color: #777;
+	.footer {
+		padding: 0px;
+		padding-left: 155px;
+		padding-right: 155px;
+		background-color: #222;
+	}
+	ul {
+		padding: 0px;
+	}
+	h4 {
+		color: #fff;
+		font-weight: 500;
+		border-bottom: 1px solid rgba(255,255,255,.07);
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 13px;
+	}
+	a {
+		color: #777;
+		font-size: 13px;
+		&:hover {
+			color: rgb(2, 168, 243);
+            text-decoration: underline !important;
+        }
+	}
+	.footer-head {
+		background: #222;
+		min-height: 70px;
+		padding: 0px;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		.language {
+			padding: 0px;
+			padding-top: 40px;
+    		display: inline-block;
+    		text-align: right;
+			label {
+				font-size: 10px;
+			}
+			.x {
+				color: rgb(2, 168, 243);
+				padding-right: 5px;
+			}
+			.checkbox {
+				vertical-align: top;
+				width: 17px;
+				height: 17px;
+			}
+			.checkbox + label {
+				cursor: pointer;
+			}
+			.checkbox:not(checked) {
+				position: absolute;
+				opacity: 0;
+			}
+			.checkbox:not(checked) + label {
+				color: rgb(2, 168, 243);
+				position: relative;
+				padding: 0 0 0 60px;
+				padding-top: 4px;
+			}
+			.checkbox:not(checked) + label:before {
+				content: '';
+				position: absolute;
+				top: -2px;
+				left: 0;
+				width: 50px;
+				height: 22px;
+				border-radius: 13px;
+				background: transparent;
+				border: 3px solid rgb(2, 168, 243);
+				box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+			}
+			.checkbox:not(checked) + label:after {
+				content: '';
+				position: absolute;
+				top: -3px;
+				left: 0px;
+				width: 23px;
+				height: 23px;
+				border-radius: 10px;
+				background: rgb(2, 168, 243);
+				box-shadow: 0 2px 5px rgba(0,0,0,.3);
+				transition: all .2s;
+			}
+			.checkbox:checked + label:before {
+				background: transparent;
+			}
+			.checkbox:checked + label:after {
+				left: 26px;
+			}
+		}
+		.newsletter {
+			padding: 0px;
+			form {
+				margin: 0px;
+				width: 100%;
+				display: inline-block;
+				fieldset {
+					padding: 0px;
+					border: none !important;
+				}
+				input {
+					float: left;
+					color: rgb(2, 168, 243);
+					transition: 0.3s;
+					background-color: #262626 !important;
+					width: 67%;
+					height: 40px;
+					border: none;
+					border-radius: 6px;
+					padding-left: 15px;
+					&:focus {
+						border-color: transparent;
+						border-bottom-color: rgb(2, 168, 243);
+						border-radius: 4px;
+						-webkit-appearance: caps-lock-indicator;
+						outline: none;
+					}
+				}
+				input::-webkit-input-placeholder,
+				textarea::-webkit-input-placeholder {
+					color: #777;
+				}
+				legend {
+					position: relative;
+					padding-bottom: 5px;
+					color: #fff;
+					font-size: 15px;
+				}
+				button {
+					float: right;
+					margin-top: -40px;
+					border: none;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.footer-body {
+		padding-top: 20px;
+		padding-bottom: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background: #262626;
+		border-radius: 4px;
+		li {
+			display: inline;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+		.follow {
+			a {
+				text-align: center;
+				display: inline-block;
+				background: rgba(255,255,255,.1);
+				border-radius: 3px;
+				width: 35px;
+				height: 35px;
+				padding-top: 9px;
+				margin-right: 4px;
+				margin-bottom: 8px;
+				-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				&:hover {
+					box-shadow: none;
+				}
+				i {
+					font-size: 16px;
+					text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+				}
+			}
+		}
+		.sitemap {
+			ul {
+				display: inline-block;
+			}
+			.x {
+				padding-left: 50px;
+			}
+			li {
+				display: block;
+			}
+		}
+		.popular {
+			li {
+				display: block;
+			}
+			
+		}
+		.also {
+			li {
+				display: block;
+			}
+			i {
+				font-size: 30px;
+			}
+		}
+	}
+	.footer-copyright {
+		background: #222;
+		color: #999;
+		padding: 0px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.copyright {
+			padding: 0px;
+		}
+    	a {
+    		margin-left: 5px;
+    		color: rgb(2, 168, 243);
+    	}
+    	.up {
+			position: absolute;
+			bottom: 20px;
+			right: -95px;
+			z-index: 999999;
+			display: inline-block;
+			img {
+				width: auto;
+				height: 45px;
+			}
+		}
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}

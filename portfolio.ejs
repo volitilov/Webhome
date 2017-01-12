@@ -1,0 +1,31 @@
+<% include components/_head %>
+<div class="col-md-12 block">
+	<div class="col-md-12 Slide carousel portfolio" data-interval="false">
+		<ol class="carousel-indicators">
+			<li data-target=".Slide" data-slide-to="0" class="active">1</li>
+			<li data-target=".Slide" data-slide-to="1">2</li>
+			<li data-target=".Slide" data-slide-to="2">3</li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="carousel-caption">
+					<% include components/_portfolio-item-1 %>
+				</div>
+			</div>
+			<div class="item">
+				<div class="carousel-caption">
+					<% include components/_portfolio-item-2 %>
+				</div>
+			</div>
+			<div class="item">
+				<div class="carousel-caption">
+					<% include components/_portfolio-item-3 %>
+				</div>
+			</div>
+		</div>
+		<a class="right carousel-control text-center" href=".Slide" role="button" data-slide="next">
+			<span aria-hidden="true"><img class="animated fadeInRight infinite" src="/images/right.svg" /></span>
+		</a>
+	</div>
+</div>
+<% include components/_footer %>
