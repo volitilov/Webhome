@@ -8,10 +8,7 @@
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
 	width: 100%;
 	height: 55px;
-	position: fixed;
-	top: 0;
 	z-index: 99;
-	text-transform: uppercase;
 	.dop-bg {
 		margin-left: 41%;
 		position: relative;
@@ -39,18 +36,20 @@
 			height: 0px;
 		}
 	}
-	.navbar-text {
-		opacity: 0;
-	}
 	.menu-icons {
 		text-align: center;
 		height: 55px;
+		.active {
+			a {
+				color: #fff;
+			}
+		}
 		li {
-			width: 15%;
 			display: inline-block;
 		}
 		a {
 			padding-top: 13px;
+			color: #393e46;
 			img {
 				transition: all 0.2s;
 				width: 40px;
@@ -82,7 +81,7 @@
 				transition: 0.3s;
 				outline: none;
 				background-color: transparent;
-				border: 3px solid #333;
+				border: 2px solid #333;
 				border-radius: 15px;
 				width: 75%;
 				margin-top: -4px;
@@ -108,8 +107,8 @@
 				text-align: center;
 				color: @color-default;
 				transition: all 0.3s;
-				font-size: 10px;
-				font-weight: bold;
+				font-size: 11px;
+				text-transform: uppercase;
 				background-color: #333;
 				background-image: url('/images/dribbble-particle-wave.gif');
 				background-size: cover;
@@ -199,24 +198,22 @@
 				}
 			}
 		}
-		.navbar-text {
-			height: 0px;
-			font-size: 0px;
-		}
 		.menu-icons {
-			width: 220px;
 			height: 55px;
 			text-align: left;
-			padding-top: 14px;
+			font-size: 13px;
+			padding-top: 17px;
 			padding-left: 7px;
 			li {
+				margin-right: 15px;
 				margin-left: 5px;
 			}
 			a {
 				display: inline-block;
 				padding: 0px;
 				img {
-					width: 30px;
+					margin-right: 3px;
+					margin-top: -3px;
 				}
 			}
 		}
@@ -254,7 +251,6 @@
 					right: 20px;
 					top: 13px;
 					width: 110px;
-					font-size: 10px;
 					padding-top: 5px;
 					padding-bottom: 3px;
 					padding-left: 15px;
@@ -268,22 +264,10 @@
 ///////////////////////////////////////////////////	laptop and dekstop devices
 @media  (min-width : 981px) {
 	.head {
-		.navbar-text {
-			opacity: 1;
-			margin-top: 8px;
-			border-left: 1px solid rgba(0, 0, 0, .2);
-			padding: 10px;
-			padding-top: 11px;
-			padding-left: 15px;
-			color: white;
-			font-size: 11px;
-			height: 37px;
-			font-weight: bold;
-		}
 		.menu-icons {
 			a {
 				img {
-					width: 27px;
+					width: 22px;
 				}
 			}
 		}

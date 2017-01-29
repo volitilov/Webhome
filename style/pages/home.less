@@ -1,114 +1,44 @@
 /////////////////////////////////////////// defaul devices mobile
-.header {
-	z-index: 999 !important;
-	background-color: transparent;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	p {
-		color: #393e46;
-		font-size: 18px;
-		font-weight: bold;
-	}
-}
-.menu {
-	margin: 0px;
-	padding: 30px;
+.slide-home {
 	background-color: rgb(2, 168, 243);
-	text-align: center;
-	-webkit-box-shadow: inset 0px 6px 15px -5px rgba(0,0,0,0.3);
-		-moz-box-shadow: inset 0px 6px 15px -5px rgba(0,0,0,0.3);
-			box-shadow: inset 0px 6px 15px -5px rgba(0,0,0,0.3);
-	ul {
-		padding: 0px;
-		list-style: none;
-		li {
-			display: inline-block;
-			width: 150px;
-			height: 150px;
-			border-radius: 8px;
-			margin: 6px;
-			padding: 0px;
-			transition: 0.4s;
-			background-image: url('/images/bg.png');
-			-webkit-box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.3);
-			-moz-box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.3);
-			box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.3);	
+	padding: 0px;
+	border-radius: 0px;
+	.home {
+		height: 250px;
+		.carousel-caption {
+			padding: 50px;
+			padding-left: 200px;
+			padding-right: 200px;
 		}
-	}
-	a {
-		.ic-about {
-			width: 70px;
-			height: 70px;
-			background-image: url('/images/icons/about/about-grey.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
-			margin: 40px;
-			margin-top: 30px;
-			margin-bottom: 10px;
-			transition: 0.4s;
-		}
-		.ic-portfolio {
-			.ic-about;
-			background-image: url('/images/icons/portfolio/portfolio-grey.svg');
-		}
-		.ic-projects {
-			.ic-about;
-			background-image: url('/images/icons/projects/projects-grey.svg');
-		}
-		.ic-services {	
-			.ic-about;
-			background-image: url('/images/icons/services/services-grey.svg');
-		}
-		.ic-info {
-			.ic-about;
-			background-image: url('/images/icons/info/info-grey.svg');
-		}
-		.ic-contacts {
-			.ic-about;
-			background-image: url('/images/icons/contacts/contacts-grey.svg');
-		}
-		p {
-			transition: 0.4s;
-			color: #393e46;
-			font-weight: bold;
-		}
-		&:hover {
-			li {
-				box-shadow: none;
-			}
-			p {
-				color: rgb(2, 168, 243);
-			}
-			.ic-about {
-				background-image: url('/images/icons/about/about-blue.svg');
-			}
-			.ic-portfolio {
-				background-image: url('/images/icons/portfolio/portfolio-blue.svg');
-			}
-			.ic-projects {
-				background-image: url('/images/icons/projects/projects-blue.svg');
-			}
-			.ic-services {	
-				background-image: url('/images/icons/services/services-blue.svg');
-			}
-			.ic-info {
-				background-image: url('/images/icons/info/info-blue.svg');
-			}
-			.ic-contacts {
-				background-image: url('/images/icons/contacts/contacts-blue.svg');
-			}
+		.carousel-control {
+			padding-top: 90px;
 		}
 	}
 }
 .body {
 	padding: 100px;
-	.body-icons {
-		margin-top: 50px;
-		img {
-			width: 60%;
-		}
+	padding-top: 50px;
+	padding-right: 140px;
+	&:before {
+		content: '';
+		width: 155px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,.1);
+	}
+	&:after {
+		content: '';
+		width: 155px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.1);
+	}
+	.btn-portfolio {
+		padding-top: 50px;
 	}
 }
 

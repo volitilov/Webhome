@@ -1,25 +1,51 @@
 <% include components/head/_head-portfolio %>
 <div class="col-md-12 block">
+	<div class="col-xs-12 nav-tags">
+		<ul>
+			<li>
+				<a class="active" href="/">All</a>
+			</li>
+			<li>
+				<a href="/freebies/ui-kits">UI Kits</a>
+			</li>
+			<li>
+				<a href="/freebies/icons">Icons</a>
+			</li>
+			<li>
+				<a href="/freebies/mockups">Mockups</a>
+			</li>
+			<li>
+				<a href="/freebies/widgets">Widgets</a>
+			</li>
+			<li>
+				<a href="/freebies/wireframes">Wireframes</a>
+			</li>
+			<li>
+				<a href="/freebies/templates">Templates</a>
+			</li>
+			<li>
+				<a href="/freebies/illustrations">Illustrations</a>
+			</li>
+			<li>
+				<a href="/freebies/themes">Themes</a>
+			</li>
+		</ul>
+	</div>
 	<div class="col-md-12 Slide carousel portfolio" data-interval="false">
-		<ol class="carousel-indicators">
-			<li data-target=".Slide" data-slide-to="0" class="active"></li>
-			<li data-target=".Slide" data-slide-to="1"></li>
-			<li data-target=".Slide" data-slide-to="2"></li>
-		</ol>
 		<div class="carousel-inner">
 			<div class="item active">
 				<div class="carousel-caption">
-					<% include components/_portfolio-item-1 %>
+					<% include components/_portfolio-item %>
 				</div>
 			</div>
 			<div class="item">
 				<div class="carousel-caption">
-					<% include components/_portfolio-item-2 %>
+					<% include components/_portfolio-item %>
 				</div>
 			</div>
 			<div class="item">
 				<div class="carousel-caption">
-					<% include components/_portfolio-item-3 %>
+					<% include components/_portfolio-item %>
 				</div>
 			</div>
 		</div>
