@@ -457,13 +457,11 @@ p {
   position: relative;
 }
 .carousel-indicators {
-  position: fixed;
-  top: 10px;
-  left: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
   z-index: 9999999;
   width: 20%;
-  margin-left: -10%;
-  padding-left: 0;
   list-style: none;
   text-align: center;
 }
@@ -480,8 +478,8 @@ p {
 }
 .carousel-indicators .active {
   margin: 0;
-  width: 15px !important;
-  height: 15px !important;
+  width: 12px;
+  height: 12px;
   background-color: black;
 }
 .carousel-inner {
