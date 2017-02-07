@@ -18,41 +18,19 @@
 		}
 	}
 	.home {
-		background-image: url('/images/s-background.svg');
-		background-size: contain;
-		background-position: center;
 		.logo {
-			margin-top: 50px;
-			margin-bottom: 50px;
-			img {
-				-webkit-box-shadow:0 10px 40px rgba(0, 0, 0, 0.3);
-					-moz-box-shadow:0 10px 40px rgba(0, 0, 0, 0.3);
-					box-shadow:0 10px 40px rgba(0, 0, 0, 0.3);
-			}
-			h2 {
-				color: #000;
-			}
+			opacity: 0;
 		}
 		.item {
 			transition: 0.4s all;
-			padding: 50px;
+			padding: 20px;
 			overflow: hidden;
-			.home-icons {
-				margin-top: 50px;
-				padding: 0px;
-				h5 {
-					color: #000;
-				}
-				img {
-					margin-top: 5px;
-					width: 120%;
-				}
-				.sector {
-					margin-top: 50px;
-				}
-			}
 			.btns {
-				margin-top: 50px;
+				margin-top: 30px;
+				a {
+					display: inline-block;
+					margin-bottom: 15px;
+				}
 				.btn-black {
 					-webkit-box-shadow:0 10px 40px rgba(0, 0, 0, 0.3);
 					-moz-box-shadow:0 10px 40px rgba(0, 0, 0, 0.3);
@@ -66,9 +44,8 @@
 			}
 		}
 		.carousel-caption {
-			padding: 50px;
-			padding-left: 200px;
-			padding-right: 200px;
+			padding-left: 20px;
+			padding-right: 20px;
 			h3 {
 				color: #000;
 			}
@@ -77,7 +54,7 @@
 			}
 		}
 		.carousel-control {
-			padding-top: 300px;
+			opacity: 0;
 		}
 	}
 	.footer-home {
@@ -111,11 +88,86 @@
 
 ///////////////////////////////////////////////////	tablet devices
 @media  (min-width : 768px)  {
-
+	.slide-home {
+		.home {
+			background-image: url('/images/s-background.svg');
+			background-size: contain;
+			background-position: center;
+			.logo {
+				opacity: 1;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				img {
+					border-radius: 10px;
+				}
+			}
+			.item {
+				padding: 50px;
+				padding-top: 20px;
+				.home-icons {
+					padding: 0px;
+					h5 {
+						color: #000;
+					}
+					img {
+						margin-top: 5px;
+						width: 80%;
+					}
+					.sector {
+						padding-bottom: 150px;
+						img {
+							margin-top: 50px;
+						}
+					}
+				}
+				.btns {
+					margin-top: 50px;
+					a {
+						display: inline;
+						margin-bottom: 50px;
+					}
+				}
+			}
+			.carousel-caption {
+				padding: 50px;
+				padding-left: 100px;
+				padding-right: 100px;
+			}
+			.carousel-control {
+				opacity: 1;
+				padding-top: 300px;
+			}
+		}
+	}
 }
 
 ///////////////////////////////////////////////////	laptop and dekstop devices
-// not required
-
+@media  (min-width : 981px) {
+	.slide-home {
+		.home {
+			.logo {
+				margin-top: 100px;
+			}
+			.item {
+				padding: 50px;
+				padding-top: 20px;
+				.home-icons {
+					padding-top: 50px;
+					img {
+						width: 120%;
+					}
+					.sector {
+						padding-top: 50px;
+						padding-bottom: 15px;
+					}
+				}
+			}
+			.carousel-caption {
+				padding-left: 170px;
+				padding-right: 170px;
+			}
+		}
+	}
+}
 ///////////////////////////////////////////////////	dekstop devices
 // not required
