@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" class="no-js">
+
+<head>
+{% block head %}
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="Theme [oti][ito] - bootstrap version"/>
+	<meta name="author" content="[volitilov]" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="/images/favicon.png"/>
+	<link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="/images/favicon.png"/>
+
+	<!-- Load CSS -->
+	<script>
+		function loadCSS(hf) {
+			var ms=document.createElement("link");ms.rel="stylesheet";
+			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+		}
+
+		// main
+		loadCSS("{{ url_for('static', filename='style/main/grid.min.css') }}");
+		loadCSS("{{ url_for('static', filename='style/main/bootstrap.css') }}");
+		loadCSS("{{ url_for('static', filename='style/main/global.css') }}");
+		loadCSS("{{ url_for('static', filename='style/main/nprogress.css') }}");
+		loadCSS("{{ url_for('static', filename='style/animate/animate.css') }}");
+		loadCSS("{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}");
+
+		// pages
+		loadCSS("{{ url_for('static', filename='style/pages/home.css') }}");
+		loadCSS("{{ url_for('static', filename='style/pages/info.css') }}");
+		loadCSS("{{ url_for('static', filename='style/pages/portfolio.css') }}");
+		loadCSS("{{ url_for('static', filename='style/pages/item.css') }}");
+		loadCSS("{{ url_for('static', filename='style/pages/page-404.css') }}");
+		loadCSS("{{ url_for('static', filename='style/pages/contacts.css') }}");
+
+		// components
+		loadCSS("{{ url_for('static', filename='style/components/head.css') }}");
+		loadCSS("{{ url_for('static', filename='style/components/footer.css') }}");
+		loadCSS("{{ url_for('static', filename='style/components/freebie-item.css') }}");
+		loadCSS("{{ url_for('static', filename='style/components/state-active.css') }}");
+		loadCSS("{{ url_for('static', filename='style/components/contacts-form.css') }}")	
+	</script>
+
+{% endblock %}	
+</head>
+
+<body>
+{% block body %}
+
+	<main>
+		{% include 'components/_head-home.html' %}
+	</main>
+	
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/nprogress.js') }}"></script>
+	<script>
+		$(document).ready(function() {
+		    NProgress.start();
+		});
+		$(window).load(function() {
+		    setTimeout(function(){NProgress.done()},1300);
+		});
+	</script>
+
+{% endblock %}	
+</body>
+
+</html>
