@@ -20,29 +20,21 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body {
-  margin: 0;
-  // background-image: url('/images/bg.png');
-  background-color: #f2f2f2;
-  // font-family: 'Nunito', sans-serif;
-  // font-family: 'Play', sans-serif;
-  font-family: "allerregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333333;
-  // color: #5555;
+div {
+  display: block;
+  position: relative;
 }
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   &:focus {
-    outline: none !important;
+    outline: none;
   }
   &:hover {
-    text-decoration: none !important;
+    text-decoration: none;
   }
 }
 main {
-  padding: 0px !important;
+  padding: 0px;
 }
 article,
 aside,
@@ -227,7 +219,6 @@ h6,
   font-size: 12px;
 }
 p {
-  font-size: 13px;
   line-height: 1.5;
   margin: 0 0 10px;
   color: #555;

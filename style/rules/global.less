@@ -1,6 +1,7 @@
 ///////////////////	color style
-@color-default: rgb(2, 168, 243);
 // @color-default: rgb(2, 168, 243);
+// @color-default: white;
+@color-default: rgb(2, 168, 243);
 
 @color-default-rgba: rgba(2, 168, 243, .1);
 // @color-default-rgba: rgba(2, 168, 243, .1);
@@ -19,21 +20,20 @@
 @color-8: rgb(127, 255, 0);
 @color-9: rgb(124, 77, 255);
 
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-#particles-js {
-	transition: all 0.3s;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
+body {
+	margin: 0;
+	background-image: url('/images/bg.png');
+	// background-color: @color-default;
+	// background-color: #f2f2f2;
+	// background-color: @color-default;
+	// font-family: 'Nunito', sans-serif;
+	// font-family: 'Play', sans-serif;
+	font-family: "allerregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #333333;
+	// color: #5555;
 }
-
 //////////////////////////////////////////////////////////////
 
 .inline-icon .pxlton, .inline-icon span {
@@ -68,6 +68,7 @@
 	&:hover {
 		box-shadow: 0 8px 8px rgba(0,0,0,0.24), 0 0 8px rgba(0,0,0,0.12);
 		cursor: pointer;
+		text-decoration: none;
 	}
 }
 
@@ -75,6 +76,7 @@
 .btn-white {
 	.btn;
 	color: rgb(2, 168, 243);
+	background-image: url('/images/bg.png');
 }
 .btn-blue {
 	.btn;
@@ -115,72 +117,6 @@
 	border-color: rgb(2, 168, 243);
 	color: rgb(2, 168, 243);
 }
-
-////////////////////////////////////////////////////////////////////
-///////////////////////////////////////						   block
-/////////////////////////////////////// 	  default mobile devices
-.block {
-	padding: 0px;
-}
-///////////////////////////////////////////////////	tablet devices
-@media  (min-width : 768px)  {
-	.block {
-		&:before {
-			content: '';
-			width: 155px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba(0,0,0,.1);
-		}
-		&:after {
-			content: '';
-			width: 155px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			background-color: rgba(0,0,0,.1);
-		}
-	}
-}
-
-///////////////////////////////////////////////////	laptop and dekstop devices
-@media  (min-width : 981px) {
-	
-}
-
-
-////////////////////////////////////////////////////////////////////
-///////////////////////////////////////							card
-/////////////////////////////////////// 	  default mobile devices
-.card {
-	width: 98%;
-	left: 50%;
-	margin-left: -49%;
-	margin-top: 70px;
-	margin-bottom: 10px;
-	background-color: #fff;
-	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
-		-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
-		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
-	border-radius: 6px;
-	padding: 30px;
-}
-///////////////////////////////////////////////////	tablet devices
-@media  (min-width : 768px)  {
-	
-}
-
-///////////////////////////////////////////////////	laptop and dekstop devices
-@media  (min-width : 981px) {
-	.card {
-		width: 76%;
-		margin-left: -38%;
-	}
-}
-
 
 ////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////			   slide and carusel
