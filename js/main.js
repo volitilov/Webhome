@@ -1,6 +1,15 @@
-jQuery(document).ready(function() {
-	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	particlesJS.load('particles-js', '/media/assets/particles/particles.json', function() {
-		console.log('callback - particles.js config loaded');
-	});
-});
+function addScript(src) {
+    var script = document.createElement('script');
+    script.src = src;
+    script.async = false;
+    document.head.appendChild(script);
+}
+
+// rules :::::::::::::::::::::::::::::::::::::::::::
+addScript('/js/rules/jquery.min.js');
+
+// my_scripts ::::::::::::::::::::::::::::::::::::::
+
+// widjets_scripts :::::::::::::::::::::::::::::::::
+addScript('/js/widjets/menu.js');
+addScript('/js/widjets/carousel.js');
