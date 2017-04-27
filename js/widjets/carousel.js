@@ -53,7 +53,7 @@ j(function() {
         var maxItem = 0;
         var items = [];
 
-        // get and remove class .active :::::::::::
+        // get and remove class .active :::::::::::::::::::::::::
         j('.carousel-inner .item').each(function() {
             items.push(j(this));
             maxItem ++;
@@ -64,36 +64,61 @@ j(function() {
             }
         });
 
-
-        // this next ::::::::::::::::::::::::::::::
-        if (j(this).hasClass('right')) {
-            if (itemActive == maxItem) {
-                items[0].addClass('active');
-            } else {
-                items[itemActive].addClass('active');
-            }
-        }
-
-        // this prev ::::::::::::::::::::::::::::::
-        if (j(this).hasClass('left')) {
-            if (itemActive <= 1) {
-                items[(maxItem - 1)].addClass('active');
-            } else {
-                items[(itemActive - 2)].addClass('active');
-            }
-        }
-
         // get and remove class .active in .carousel-indicator ::
         j('.carousel-indicator li').each(function() {
             if (j(this).hasClass('active')) {
                 j(this).removeClass('active');
-            }
-
-            if (j(this).attr('data-slider-to') == itemActive) {
-                j(this).addClass('active');
+                j(this).removeClass('animated');
+                j(this).removeClass('bounceIn');
             }
         });
-        
+
+        // this next ::::::::::::::::::::::::::::::::::::::::::::
+        if (j(this).hasClass('right')) {
+            if (itemActive == maxItem) {
+                items[0].addClass('active');
+                j('.carousel-indicator li').each(function() {
+                    if (j(this).attr('data-slider-to') == 1) {
+                        j(this).addClass('active');
+                        j(this).addClass('animated');
+                        j(this).addClass('bounceIn');
+                    }
+                });
+            } else {
+                items[itemActive].addClass('active');
+                j('.carousel-indicator li').each(function() {
+                    if (j(this).attr('data-slider-to') == itemActive + 1) {
+                        j(this).addClass('active');
+                        j(this).addClass('animated');
+                        j(this).addClass('bounceIn');
+                    }
+                });
+            }
+        }
+
+        // this prev ::::::::::::::::::::::::::::::::::::::::::::
+        if (j(this).hasClass('left')) {
+            if (itemActive <= 1) {
+                items[(maxItem - 1)].addClass('active');
+                j('.carousel-indicator li').each(function() {
+                    if (j(this).attr('data-slider-to') == maxItem) {
+                        j(this).addClass('active');
+                        j(this).addClass('animated');
+                        j(this).addClass('bounceIn');
+                    }
+                });
+            } else {
+                items[(itemActive - 2)].addClass('active');
+                 j('.carousel-indicator li').each(function() {
+                    if (j(this).attr('data-slider-to') == (itemActive - 1)) {
+                        j(this).addClass('active');
+                        j(this).addClass('animated');
+                        j(this).addClass('bounceIn');
+                    }
+                });
+            }
+        }
+
         return false;
     });
 });

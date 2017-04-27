@@ -22,9 +22,9 @@ j(function() {
         j(this).addClass('active');
 
 		switch (titleValue) {
-			case 'Info':
+			case 'Home':
 				j(this).addClass('active');
-				j('.slide-info').addClass('active');
+				j('.slide-home').addClass('active');
 				break;
 			case 'About':
 				j(this).addClass('active');
